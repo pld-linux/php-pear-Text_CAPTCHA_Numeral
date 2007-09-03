@@ -7,7 +7,7 @@ Summary:	%{_pearname} - generation of numeral maths captchas
 Summary(pl.UTF-8):	%{_pearname} - generowanie matematycznych captcha
 Name:		php-pear-%{_pearname}
 Version:	1.2.0
-Release:	0.1
+Release:	1
 License:	BSD License
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
@@ -60,10 +60,9 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc install.log docs/Text_CAPTCHA_Numeral/examples
 %{php_pear_dir}/.registry/*.reg
-%{php_pear_dir}/interfaces/NumeralInterface.php
-%{php_pear_dir}/Numeral.php
+%{php_pear_dir}/Text/CAPTCHA/Numeral
+%{php_pear_dir}/Text/CAPTCHA/Numeral.php
 
 %files tests
 %defattr(644,root,root,755)
 %{php_pear_dir}/tests/Text_CAPTCHA_Numeral
-%endif
