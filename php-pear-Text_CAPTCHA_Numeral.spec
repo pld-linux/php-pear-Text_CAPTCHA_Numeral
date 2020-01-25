@@ -1,6 +1,5 @@
 %define		status		stable
 %define		pearname	Text_CAPTCHA_Numeral
-%include	/usr/lib/rpm/macros.php
 Summary:	%{pearname} - generation of numeral maths captchas
 Summary(pl.UTF-8):	%{pearname} - generowanie matematycznych captcha
 Name:		php-pear-%{pearname}
